@@ -20,7 +20,6 @@ set laststatus=2
 set showtabline=2
 set noshowmode
 
-python import sys; sys.path.append("/usr/local/lib/python2.7/site-packages/")
 set rtp+="/usr/local/lib/python2.7/site-packages/powerline/bindings/vim"
 source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
 python from powerline.vim import setup as powerline_setup
