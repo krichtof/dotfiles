@@ -1,0 +1,11 @@
+#cloud-config
+
+users:
+  - name: krichtof                # use any user name you like
+    primary-group: users
+    shell: /bin/bash
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: sudo
+    ssh-import-id:
+      - gh:krichtof
+    lock_passwd: true
